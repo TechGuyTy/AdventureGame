@@ -54,12 +54,14 @@ public class LoopsExercise {
 						// validate input
 						ans = isValidInput2(scan, ans);
 						
+						
+						
 						if (ans.equalsIgnoreCase("1")) {
 							// gun
-							System.out.println("You murmer the incantation and the boulder begins to tremble. After a brief moment, the boulder is now levitating allowing passage into the cave.");
+							System.out.println("You lunge with your trusty battle axe and take a mighty swing! \nThe axe shatters against the thick dragon skin and he wakes up. \nIn a swift motion, the dragon turns and gobbles you up");
 						} else if (ans.equalsIgnoreCase("2")) {
 							// sword
-							System.out.println("You murmer the incantation and a beam of light heads towards the boulder. \nThe beam of light refracts within the boulder and then the beam comes back at you! \nYou remembered the wrong spell. GAME OVER!");
+							System.out.println("Despite your inner-voice that says to use the giant axe, you listen to the wise man and grab the dagger. \nYou sneak up behind the dragon");
 						}
 						
 					} else if (ans.equalsIgnoreCase("2")) {
@@ -69,7 +71,7 @@ public class LoopsExercise {
 					
 				} else if (ans.equalsIgnoreCase("2")) {
 					// sword
-					System.out.println("You lay down to rest with the group. \n Just as fast as your eyes begin to shut, a dragon appears. \nHe incinerates your entire camp. \n GAME OVER.");
+					System.out.println("You lay down to rest with the group. \n Just as fast as your eyes begin to shut, a dragon appears. \nHe incinerates your entire camp." + name + " \nGAME OVER");
 				}
 			} else {
 				// pub death
