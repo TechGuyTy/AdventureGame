@@ -7,7 +7,6 @@ public class DiceRoller {
 		
 		System.out.print("Welcome to the Automated Dice Roller! \nwould you like to roll the dice? (y/n):");
 		
-		
 		do{
 		
 		int numberOfSides = 0;
@@ -82,7 +81,7 @@ public static int diceRoll(int numberOfSides){
 }
 
 
-
+//GIT
 
 
 }
