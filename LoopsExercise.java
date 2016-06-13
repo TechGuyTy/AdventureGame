@@ -12,24 +12,24 @@ public class LoopsExercise {
 
 		boolean start = true;
 
-		if (Integer.parseInt(choice) == 2) {
+		if (Integer.parseInt(ans) == 2) {
 			System.out.println("You're missing out on an epic adventure! Maybe some other time.");
 			start = false;
 		}
 
-		if (start == true)
+		else if (start == true)
 			// ask for name
 			System.out.println("What's your name, mighty warrior?!");
 		String name = scan.nextLine();
 		do {
-			System.out.println("A dragon is approaching the city to satisfy its hunger for human flesh");
+			System.out.println("A dragon is near the city and is hungry for human flesh");
 			System.out.println("1. Head out with the group \n2. You're already good as dead, head to the pub!");
 			ans = scan.nextLine();
 			// validate input
 			ans = isValidInput2(scan, ans);
 			if (ans.equalsIgnoreCase("1")) {
 				// run
-				System.out.println("You and the rest of your party embark into the woods. \nYou reach a small clearing as dusk begins to fall.\n They all want to rest, but you know time's a limited resource. \n Do you press on or get some shut eye? \n1.Press Forward! \n2. Rest in the woods");
+				System.out.println("You and the rest of your party embark into the woods. \nYou reach a small clearing as dusk begins to fall.\nThey all want to rest, but you know time's a limited resource. \nDo you press on or get some shut eye? \n1.Press Forward! \n2. Rest in the woods");
 				ans = scan.nextLine();
 				// validate input
 				ans = isValidInput2(scan, ans);
@@ -61,7 +61,7 @@ public class LoopsExercise {
 							System.out.println("You lunge with your trusty battle axe and take a mighty swing! \nThe axe shatters against the thick dragon skin and he wakes up. \nIn a swift motion, the dragon turns and gobbles you up");
 						} else if (ans.equalsIgnoreCase("2")) {
 							// sword
-							System.out.println("Despite your inner-voice that says to use the giant axe, you listen to the wise man and grab the dagger. \nYou sneak up behind the dragon");
+							System.out.println("Despite your inner-voice that says to use the giant axe, you listen to the wise man and grab the dagger. \nYou sneak up behind the dragon and slice his throat. \nGreen blood oozes from the wound and the dragon disappears in a puff of smoke. \nCongratulations! YOU WON!");
 						}
 						
 					} else if (ans.equalsIgnoreCase("2")) {
@@ -73,12 +73,12 @@ public class LoopsExercise {
 					// sword
 					System.out.println("You lay down to rest with the group. \n Just as fast as your eyes begin to shut, a dragon appears. \nHe incinerates your entire camp." + name + " \nGAME OVER");
 				}
-			} else {
+			 else if(ans.equalsIgnoreCase("2")){
 				// pub death
 				System.out.println(
 						"As you get to the door of the pub, the dragon flies in and incinerates the whole town. \nNice try "
 								+ name + " \nGAME OVER");
-				break;
+			}
 				// fight
 
 			}
